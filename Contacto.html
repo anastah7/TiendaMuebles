@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Tienda <span>Muebles</span></h1>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li>Tienda</li>
+        <li>Galeria</li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <h2>Contacto</h2>
+      <form action="formulario">
+        <fieldset>
+          <legend>TUS DATOS</legend>
+          <p>
+            <label for="nombre">Nombre: </label>
+            <input type="text" placeholder="Tu Nombre" required />
+          </p>
+          <p>
+            <label for="Asunto">Asunto: </label>
+            <input type="text" placeholder="Tu Asunto" required />
+          </p>
+          <p>
+            <label for="Email">E-mail: </label>
+            <input type="email" placeholder="Tu Email" required />
+          </p>
+          <p>
+            <label for="Telefono">Teléfono: </label>
+            <input type="tel" placeholder="Tu teléfono" required />
+          </p>
+          <p>
+            <label for="mensaje">Mensaje: </label>
+            <textarea name="mensaje" id="mensaje" cols="40" rows="7"></textarea>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>PAIS</legend>
+          <p>
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais">
+              <optgroup>
+                <option value="vacia" selected>--Seleccione--</option>
+                <option value="espana">Espana</option>
+                <option value="mar">Marruecos</option>
+                <option value="fr">Francia</option>
+                <option value="usa">EEUU</option>
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>INFORMACION EXTRA</legend>
+          <p>
+            <input type="radio" name="c" value="Cliente" />Cliente <br />
+            <input type="radio" name="c" value="Proveedor" />Proveedor
+          </p>
+          <p>
+            <label for="CdI">Categoria de Interes</label>
+            <input type="text" />
+          </p>
+        </fieldset>
+        <input type="submit" value="ENVIAR FORMULARIO" />
+      </form>
+    </main>
+    <footer class="container">
+      <div>
+        <h2>Categorias</h2>
+        <ul>
+          <li>Cocina</li>
+          <li>Oficina</li>
+          <li>Jardin</li>
+          <li>Cochera</li>
+          <li>Dormitorios</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Sobre Nosotros</h2>
+        <ul>
+          <li>Nuestra Historia</li>
+          <li>Mision,Vision y Valores</li>
+          <li>Carreras</li>
+          <li>Politica de privacidad</li>
+          <li>Términos del Servicio</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Soporte</h2>
+        <ul>
+          <li>Preguntas Frecuentes</li>
+          <li>Ayuda en Linea</li>
+          <li>Confianza y Seguridad</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
